@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Exponent Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-start items-start min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600 mt-16 ml-8">
+    <!-- Container Kalkulator dan Penjelasan -->
+    <div class="flex space-x-16">
+        <!-- Kalkulator -->
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Exponent Calculator</h1>
+            <div class="flex justify-between items-center mb-4">
+                <input type="number" class="border border-gray-300 rounded p-2 w-1/2 mr-2 focus:ring-2 focus:ring-blue-500 focus:outline-none" id="base" placeholder="Base">
+                <input type="number" class="border border-gray-300 rounded p-2 w-1/2 focus:ring-2 focus:ring-blue-500 focus:outline-none" id="exponent" placeholder="Exponent">
+            </div>
+            <div class="flex justify-between items-center mb-6">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="count">Count</button>
+                <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out" id="clear">Clear</button>
+            </div>
+            <div class="border border-gray-300 rounded p-4 h-20 flex items-center justify-center text-gray-700 text-lg" id="result">Result will appear here</div>
+            <ul id="steps" class="mt-4"></ul> <!-- Tambahkan elemen untuk langkah-langkah -->
+        </div>
+        
+
+        <!-- Penjelasan Bilangan Eksponen -->
+        <div class="bg-white p-8 rounded-lg shadow-lg w-120 text-gray-800">
+            <h2 class="text-xl font-bold mb-4">What is an Exponent?</h2>
+            <p class="mb-4">
+                An exponent refers to how many times a number (the base) is multiplied by itself. For example, <strong>2<sup>3</sup></strong> (read as "2 to the power of 3") means <strong>2 × 2 × 2 = 8</strong>.
+            </p>
+            <h3 class="text-lg font-semibold mb-2">Basic Rules of Exponents:</h3>
+            <ul class="list-disc list-inside">
+                <li><strong>Base<sup>1</sup></strong>: Any number raised to the power of 1 is the number itself. Example: 5<sup>1</sup> = 5.</li>
+                <li><strong>Base<sup>0</sup></strong>: Any number raised to the power of 0 is 1. Example: 7<sup>0</sup> = 1.</li>
+                <li><strong>Base<sup>-n</sup></strong>: Negative exponents give the reciprocal of the base raised to the positive exponent. Example: 2<sup>-3</sup> = 1/2<sup>3</sup> = 1/8.</li>
+            </ul>
+            <p class="mt-4">Exponents are used to simplify large numbers. For example, <strong>10<sup>6</sup></strong> means 1,000,000.</p>
+        </div>
+    </div>
+
+    <!-- Hubungkan ke file JavaScript -->
+    <script src="rekursif.js"></script>
+</body>
+</html>
